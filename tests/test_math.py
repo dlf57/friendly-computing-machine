@@ -1,0 +1,22 @@
+"""
+Testing for the math.py module
+"""
+
+import friendly_computing_machine as fcm
+import pytest
+
+def test_add():
+    assert fcm.math.add(5, 2) == 7
+    assert fcm.math.add(2, 5) == 7
+
+def test_mult():
+    assert fcm.math.mult(5, 2) == 10
+    assert fcm.math.mult(2, 5) == 10
+
+def test_sub():
+    assert fcm.math.sub(5, 2) == 3
+    assert fcm.math.sub(2, 5) == -3
+
+def test_div():
+    assert fcm.math.div(4, 2) == 2
+    assert fcm.math.div(10, 5) == 2
